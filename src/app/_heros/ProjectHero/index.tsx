@@ -44,13 +44,13 @@ export const ProjectHero: React.FC<{
           </div>
           <h1 className={classes.title}>{title}</h1>
           <div>
-            <p className={classes.description}>
+            {/* <p className={classes.description}>
               {`${description ? `${description} ` : ''}To edit this project, `}
               <Link href={`${process.env.NEXT_PUBLIC_SERVER_URL}/admin/collections/projects/${id}`}>
                 navigate to the admin dashboard
               </Link>
               {'.'}
-            </p>
+            </p> */}
           </div>
         </div>
         <div className={classes.media}>

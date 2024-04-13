@@ -43,7 +43,7 @@
 }
 
 .media {
-  width: 50%;
+  width: 25%;
 
   @include mid-break {
     width: 100%;
@@ -54,7 +54,7 @@
   text-decoration: none;
   display: block;
   position: relative;
-  aspect-ratio: 5 / 4;
+  aspect-ratio: 6 / 4;
   margin-bottom: calc(var(--base) / 2);
   width: calc(100% + calc(var(--gutter-h) / 2));
 
@@ -66,6 +66,7 @@
 
 .image {
   object-fit: cover;
+  border-radius: 15px;
 }
 
 .placeholder {
