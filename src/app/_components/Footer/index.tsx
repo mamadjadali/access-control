@@ -40,7 +40,7 @@ export async function Footer() {
           {navItems.map(({ link }, i) => {
             return <CMSLink key={i} {...link} />
           })}
-          <Link href="/admin">Admin</Link>
+          {/* <Link href="/admin">Admin</Link>
           <Link
             href="https://github.com/payloadcms/payload/tree/main/templates/website"
             target="_blank"
@@ -50,7 +50,7 @@ export async function Footer() {
           </Link>
           <Link href="https://payloadcms.com" target="_blank" rel="noopener noreferrer">
             Payload
-          </Link>
+          </Link> */}
         </nav>
       </Gutter>
     </footer>
