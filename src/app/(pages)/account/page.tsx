@@ -47,16 +47,7 @@ export default async function Account() {
             type: 'paragraph',
             children: [
               {
-                text: 'This is your account dashboard. Here you can update your account information, view your comment history, and more. To manage all users, ',
-              },
-              {
-                type: 'link',
-                url: '/admin/collections/users',
-                children: [
-                  {
-                    text: 'login to the admin dashboard.',
-                  },
-                ],
+                text: 'This is your account dashboard. Here you can update your account information. ',
               },
             ],
           },
@@ -65,7 +56,7 @@ export default async function Account() {
       <Gutter className={classes.account}>
         <AccountForm />
         <HR />
-        <h2>Comments</h2>
+        {/* <h2>Comments</h2>
         <p>
           These are the comments you have placed over time. Each comment is associated with a
           specific post. All comments must be approved by an admin before they appear on the site.
@@ -97,7 +88,7 @@ export default async function Account() {
               </Fragment>
             )
           })}
-        <HR />
+        <HR /> */}
         <Button href="/logout" appearance="secondary" label="Log out" />
       </Gutter>
     </Fragment>
