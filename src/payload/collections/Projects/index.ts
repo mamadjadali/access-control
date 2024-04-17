@@ -11,6 +11,7 @@ import { slugField } from '../../fields/slug'
 import { populateArchiveBlock } from '../../hooks/populateArchiveBlock'
 import { populatePublishedAt } from '../../hooks/populatePublishedAt'
 import { revalidateProject } from './hooks/revalidateProject'
+import { adminsOrLoggedIn } from '../../access/adminsOrLoggedIn'
 
 export const Projects: CollectionConfig = {
   slug: 'projects',
@@ -32,7 +33,7 @@ export const Projects: CollectionConfig = {
     drafts: true,
   },
   access: {
-    read: adminsOrPublished,
+    read: adminsOrLoggedIn,
     update: admins,
     create: admins,
     delete: admins,
