@@ -8,6 +8,7 @@ import { useAuth } from '../../../_providers/Auth'
 import { CMSLink } from '../../Link'
 
 import classes from './index.module.scss'
+import { Button } from '../../Button'
 
 export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
   const navItems = header?.navItems || []
@@ -29,15 +30,12 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
       })}
       {user && <Link href="/service">Service`s</Link>}
       {user && <Link href="/account">Account</Link>}
-      {/*
-        // Uncomment this code if you want to add a login link to the header
         {!user && (
           <React.Fragment>
-            <Link href="/login">Login</Link>
-            <Link href="/create-account">Create Account</Link>
+            <Button label='Login' appearance='primary' href='/login' />
           </React.Fragment>
         )}
-      */}
+     
     </nav>
   )
 }
