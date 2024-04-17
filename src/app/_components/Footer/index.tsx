@@ -30,8 +30,8 @@ export async function Footer() {
           <picture>
             <img
               className={classes.logo}
-              alt="Payload Logo"
-              src="https://raw.githubusercontent.com/payloadcms/payload/main/packages/payload/src/admin/assets/images/payload-logo-light.svg"
+              alt="REP Logo"
+              src="/assets/images/logo-light.svg"
             />
           </picture>
         </Link>
