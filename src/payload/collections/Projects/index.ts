@@ -33,7 +33,7 @@ export const Projects: CollectionConfig = {
     drafts: true,
   },
   access: {
-    read: adminsOrLoggedIn,
+    read: adminsOrPublished,
     update: admins,
     create: admins,
     delete: admins,
