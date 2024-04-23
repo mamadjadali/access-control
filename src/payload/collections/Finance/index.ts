@@ -19,15 +19,15 @@ const Finance: CollectionConfig = {
       required: true,
     },
     {
-        name: 'Amount',
-        type: 'text',
+      name: 'Amount',
+      type: 'text',
     },
     {
-        name: 'Date',
-        type: 'date',
-        admin: {
-          position: 'sidebar',
-        },
+      name: 'Date',
+      type: 'date',
+      admin: {
+        position: 'sidebar',
+      },
     },
   ],
 }

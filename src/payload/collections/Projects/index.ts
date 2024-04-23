@@ -1,5 +1,4 @@
 import type { CollectionConfig } from 'payload/types'
-
 import { admins } from '../../access/admins'
 import { adminsOrPublished } from '../../access/adminsOrPublished'
 import { Archive } from '../../blocks/ArchiveBlock'
@@ -11,7 +10,6 @@ import { slugField } from '../../fields/slug'
 import { populateArchiveBlock } from '../../hooks/populateArchiveBlock'
 import { populatePublishedAt } from '../../hooks/populatePublishedAt'
 import { revalidateProject } from './hooks/revalidateProject'
-import { adminsOrLoggedIn } from '../../access/adminsOrLoggedIn'
 
 export const Projects: CollectionConfig = {
   slug: 'projects',

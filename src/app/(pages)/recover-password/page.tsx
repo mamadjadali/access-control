@@ -1,6 +1,5 @@
 import React from 'react'
 import { Metadata } from 'next'
-
 import { mergeOpenGraph } from '../../_utilities/mergeOpenGraph'
 import { RecoverPasswordForm } from './RecoverPasswordForm'
 import Image from 'next/image'
@@ -13,7 +12,6 @@ export default async function RecoverPassword() {
     <section className={classes.recoverPassword}>
       <div className={classes.heroImg}>
       </div>
-
       <div className={classes.formWrapper}>
         <div className={classes.formContainer}>
           <RenderParams className={classes.params} />

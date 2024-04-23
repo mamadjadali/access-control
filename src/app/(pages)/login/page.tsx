@@ -1,11 +1,9 @@
 import React from 'react'
 import { Metadata } from 'next'
-
 import { RenderParams } from '../../_components/RenderParams'
 import { getMeUser } from '../../_utilities/getMeUser'
 import { mergeOpenGraph } from '../../_utilities/mergeOpenGraph'
 import LoginForm from './LoginForm'
-
 import classes from './index.module.scss'
 import Image from 'next/image'
 
@@ -26,7 +24,6 @@ export default async function Login() {
     <section className={classes.login}>
       <div className={classes.heroImg}>
       </div>
-
       <div className={classes.formWrapper}>
         <div className={classes.formContainer}>
           <RenderParams className={classes.params} />
